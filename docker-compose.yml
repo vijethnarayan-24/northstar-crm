@@ -1,0 +1,16 @@
+# Optional: a real Postgres for local development.
+#   docker compose up -d
+#   then set DATABASE_URL=postgres://crm:crm@localhost:5432/crm in server/.env
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: crm
+      POSTGRES_PASSWORD: crm
+      POSTGRES_DB: crm
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

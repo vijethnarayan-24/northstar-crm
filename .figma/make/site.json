@@ -1,0 +1,11 @@
+{
+  "title": "Northstar CRM",
+  "description": "Northstar CRM: the team’s shared workspace for leads, pipeline, tasks and activity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
